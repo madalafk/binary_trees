@@ -1,9 +1,10 @@
 #include "binary_trees.h"
 
-/** create_node - creates new levelloader_queue_t node
+/**
+  * create_node - creates new levelloader_queue_t node
   * @node: The binary tree node for the new node to contain.
   * Return: If tree or func is NULL, do nothing
-*/
+  */
 
 levelorder_queue_t *create_node(binary_tree_t *node);
 void free_queue(levelorder_queue_t *head);
@@ -49,9 +50,8 @@ void free_queue(levelorder_queue_t *head)
  * @head: double pointer to head of queue.
  * @tail: double pointer to tail of queue.
  * @func: pointer to function to call on @node.
- *
- * Description: Upon malloc failure, exits with a status code of 1.
  */
+
 void pint_push(binary_tree_t *node, levelorder_queue_t *head,
 		levelorder_queue_t **tail, void (*func)(int))
 {
